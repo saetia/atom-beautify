@@ -38,8 +38,7 @@ module.exports = (getCmd, isStdout) ->
                     # This should normalize the $PATH
                     # by calling the external files that would usually
                     # change the $PATH variable on user login.
-                    $path = "[ -f ~/.bash_profile ] && source ~/.bash_profile;"
-                    $path += "[ -f ~/.bashrc ] && source ~/.bashrc;"
+                    $path = "[ -f ~/.zshrc ] && source ~/.zshrc;"
 
                     # See http://stackoverflow.com/a/638980/2578205
                     # for checking if file exists in Bash
